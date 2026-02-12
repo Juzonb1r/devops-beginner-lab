@@ -9,7 +9,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/Juzonb1r/devops-beginner-lab.git'
+                git branch: 'main',
+		    url:  'https://github.com/Juzonb1r/devops-beginner-lab.git'
             }
         }
 
